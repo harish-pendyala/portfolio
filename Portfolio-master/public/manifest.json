@@ -1,0 +1,15 @@
+{
+  "short_name": "HP",
+  "name": "Harish Pendyala",
+  "icons": [
+    {
+      "src": "h.png",
+      "sizes": "1000x750",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

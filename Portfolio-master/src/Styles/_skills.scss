@@ -1,0 +1,74 @@
+.skills {
+  background-color: $skills-background-color;
+
+  padding-bottom: 20vh;
+
+  .heading {
+    @include section-heading($skills-primary-color);
+    .divider { @include heading-divider($skills-accent-color); }
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+
+    padding: 5vh 5vw 5vh 5vw;
+
+    .langs, .tools, .misc, .academic {
+      padding-bottom: 5vh;
+
+      h5, p { color: $skills-primary-color; }
+      h6 { color: $skills-secondary-color; }
+    }
+
+    .langs {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .left, .middle, .right {
+        @extend %center-content;
+
+        .java-icon, .j2ee-icon, .web-icon, .js-icon, .database-icon, .aws-icon, .tools-icon, .misc-icon {
+          width: calc(5rem + 2vw);
+          height: calc(5rem + 2vw);
+
+          margin-bottom: 10px;
+
+          animation: fadeIn;
+          animation-duration: 1s;
+        }
+
+        .java-icon { background-image: url('../Media/Images/java.png'); background-repeat: no-repeat;}
+        .web-icon { background-image: url('../Media/Images/web.png'); background-repeat: no-repeat;}
+        .js-icon { background-image: url('../Media/Images/javascript.png'); background-repeat: no-repeat;}
+        .j2ee-icon { background-image: url('../Media/Images/j2ee.png'); background-repeat: no-repeat;}
+        .database-icon { background-image: url('../Media/Images/database.png'); background-repeat: no-repeat;}
+        .aws-icon { background-image: url('../Media/Images/aws.png'); background-repeat: no-repeat;}
+        .tools-icon { background-image: url('../Media/Images/tools.jpg'); background-repeat: no-repeat;}
+        .misc-icon { background-image: url('../Media/Images/misc.png'); background-repeat: no-repeat;}
+      }
+    }
+
+
+
+    .download-container {
+      @extend %center-middle-content;
+      width: 100%;
+
+      a {
+        .download-button {
+          @extend %background-grad;
+          @extend %border-grad;
+
+          width: 250px;
+
+          color: $skills-primary-color;
+        }
+      }
+    }
+  }
+
+  .triangle { @include triangle($skills-triangle-background-color); }
+}

@@ -1,0 +1,43 @@
+.experience {
+  background-color: $experience-background-color;
+
+  .heading {
+    @include section-heading($experience-primary-color);
+    .divider { @include heading-divider($experience-accent-color); }
+  }
+
+  .content {
+    @media (max-width: 749px) { grid-template-rows: 1fr 350px; }
+    @media (min-width: 750px) { grid-template-columns: repeat(2, 1fr); }
+
+    display: grid;
+    grid-gap: 30px;
+
+    padding: 5vh 5vw 5vh 5vw;
+    h1{
+      color:$experience-primary-color
+    }
+    h2, h4{
+      color:$experience-secondary-color
+    }
+
+  .exp{
+
+  }
+
+
+
+
+    .external {
+      @media (max-width: 749px) { grid-row: 2; text-align: center; }
+      @media (min-width: 750px) { grid-column: 2; }
+
+      position: relative;
+    .education{
+
+    }
+
+
+    }
+  }
+}
