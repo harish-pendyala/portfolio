@@ -2,7 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazyload'
 
 const Experience = () => (
-  <section className='experience' id='contact'>
+  <section className='experience' id='experience'>
     <h2 className='heading'>
       Experience & Education<LazyLoad height={15}><hr className='divider' /></LazyLoad>
     </h2>
